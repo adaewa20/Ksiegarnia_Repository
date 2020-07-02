@@ -1,0 +1,12 @@
+version: '2'
+services:
+  ksiegarnia-postgresql:
+    image: postgres:12.3
+    # volumes:
+    #     - ~/volumes/jhipster/Ksiegarnia/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=Ksiegarnia
+      - POSTGRES_PASSWORD=
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - 5432:5432
